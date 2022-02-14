@@ -1,94 +1,92 @@
-solution = function(dateStr) {
+solution = function (dateStr) {
 
-    // dateStr = prompt("Введите дату", "21/03");
-    console.log("dateStr");
-    console.log(dateStr);
-    dateStr = dateStr.split("/");
-    console.log(dateStr);
-    let day = parseInt(dateStr[0]);
-    console.log("day");
-    console.log(day);
-    let month = parseInt(dateStr[1]);
-    console.log("month");
-    console.log(month);
-    let znak = "Зодиак";
+    const day = parseInt(dateStr.split("/")[0]);
+    const month = parseInt(dateStr.split("/")[1]);
 
     switch (month) {
         case 1:
-            if (day <= 19)
-                znak = "Козерог";
-            else
-                znak = "Водолей";
-            break;
-        case 2:
-            if (day <= 18)
-                znak = "Водолей";
-            else
-                znak = "Рыбы";
-            break;
-        case 3:
-            if (day <= 20)
-                znak = "Рыбы";
-            else
-                znak = "Овен";
-            break;
-        case 4:
-            if (day <= 19)
-                znak = "Овен";
-            else
-                znak = "Телец";
-            break;
-        case 5:
-            if (day <= 20)
-                znak = "Телец";
-            else
-                znak = "Близнецы";
-            break;
-        case 6:
-            if (day <= 21)
-                znak = "Близнецы";
-            else
-                znak = "Рак";
-            break;
-        case 7:
-            if (day <= 22)
-                znak = "Рак";
-            else
-                znak = "Лев";
-            break;
-        case 8:
-            if (day <= 22)
-                znak = "Лев";
-            else
-                znak = "Дева";
-            break;
-        case 9:
-            if (day <= 22)
-                znak = "Дева";
-            else
-                znak = "Весы";
-            break;
-        case 10:
-            if (day <= 22)
-                znak = "Весы";
-            else
-                znak = "Скорпион";
-            break;
-        case 11:
-            if (day <= 22)
-                znak = "Скорпион";
-            else
-                znak = "Стрелец";
-            break;
-        case 12:
-            if (day <= 21)
-                znak = "Стрелец";
-            else
-                znak = "Козерог";
-            break;
-    }
-    console.log(znak);
-    alert(znak);
-};
+            if (day <= 19) {
+                return "Козерог";
+            } else {
+                return "Водолей";
+            }
 
-solution("15/05");
+        case 2:
+            if (day <= 18) {
+                return "Водолей";
+            } else {
+                return "Рыбы";
+            }
+
+        case 3:
+            if (day <= 20) {
+                return "Рыбы";
+            } else {
+                return "Овен";
+            }
+
+        case 4:
+            if (day <= 19) {
+                return "Овен";
+            } else {
+                return "Телец";
+            }
+
+        case 5:
+            if (day <= 20) {
+                return "Телец";
+            } else {
+                return "Близнецы";
+            }
+
+        case 6:
+            if (day <= 21) {
+                return "Близнецы";
+            } else {
+                return "Рак";
+            }
+
+        case 7:
+            if (day <= 22) {
+                return "Рак";
+            } else {
+                return "Лев";
+            }
+
+        case 8:
+            if (day <= 22) {
+                return "Лев";
+            } else {
+                return "Дева";
+            }
+
+        case 9:
+            if (day <= 22) {
+                return "Дева";
+            } else {
+                return "Весы";
+            }
+
+        case 10:
+            if (day <= 22) {
+                return "Весы";
+            } else {
+                return "Скорпион";
+            }
+
+        case 11:
+            if (day <= 22) {
+                return "Скорпион";
+            } else {
+                return "Стрелец";
+            }
+
+        case 12:
+            if (day <= 21) {
+                return "Стрелец";
+            } else {
+                return "Козерог";
+            }
+
+    }
+};
